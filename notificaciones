@@ -1,0 +1,18 @@
+class notificaciones:
+    def enviar(self):
+      pass
+
+class email(notificaciones):
+    def enviar(self):
+        return"hola"
+        
+        
+class sms(notificaciones):
+    def enviar(self):
+        return"a tu email enviamos un hola"
+        
+e1 = email()
+print(e1.enviar())
+
+e2=sms()
+print(e2.enviar())
