@@ -1,7 +1,9 @@
-class sistema_de_pago:
+from abc import ABC, abstractmethod
+class sistema_de_pago(ABC):
+  @abstractmethod
   def procesar_pago(self):
     pass
-    
+
 class targetacredito(sistema_de_pago):
   def procesar_pago(self):
         return "tu plata fue pagada en tu targeta de credito"
