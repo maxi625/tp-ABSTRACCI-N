@@ -1,0 +1,22 @@
+from abc import ABC, abstractmethod
+class empleado:
+    @abstractmethod
+    def calcular_area(self):
+        pass
+    
+    
+class empleadoporhora(empleado):
+    def calcular_area(self):
+        return "el empleado cobra por hora 1000 pesos."
+
+
+class empleadofijo(empleado):
+    def calcular_area(self):
+        return "el empleado fijo cobra 2500 pesos."
+        
+
+e1 = empleadoporhora()
+print(e1.calcular_area())
+
+e2 = empleadofijo()
+print(e2.calcular_area())
