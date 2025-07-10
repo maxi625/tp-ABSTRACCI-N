@@ -1,0 +1,19 @@
+class sistema_de_pago:
+  def procesar_pago(self):
+    pass
+    
+class targetacredito(sistema_de_pago):
+  def procesar_pago(self):
+        return "tu plata fue pagada en tu targeta de credito"
+        
+        
+class paypal(sistema_de_pago):
+  def procesar_pago(self):
+        return "tu plata fue pagada en paypal"
+        
+        
+e1 = targetacredito()
+print(e1.procesar_pago())
+
+e2 = paypal()
+print(e2.procesar_pago())
