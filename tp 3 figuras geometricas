@@ -1,21 +1,20 @@
 from abc import ABC, abstractmethod
-class figura:
+
+class figura(ABC):
     @abstractmethod
     def calcular_area(self):
-      pass
-  
+        pass
   
 class circulo(figura):
     def calcular_area(self):
-     return "Área del círculo = 28.27 unidades² (aproximadamente)"
+        return "area del círculo = 28.27 unidades (aproximadamente)"
         
 class rectangulo(figura):
     def calcular_area(self):
-     return "Área del rectángulo = 20 unidades² "
+        return "area del rectángulo = 20 unidades "
 
-        
-e1=circulo()
+e1 = circulo()
 print(e1.calcular_area())
 
-e2=rectangulo()
+e2 = rectangulo()
 print(e2.calcular_area())
